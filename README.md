@@ -4,7 +4,33 @@ A Clojure library designed to ... well, that part is up to you.
 
 ## Usage
 
-FIXME
+## Benchmark Results
+
+### Average Calculations
+| Function                     | Execution Time       |
+|------------------------------|----------------------|
+| `count` on `n`               | 37.41 ms             |
+| `count` on `nd`              | 58.47 ns             |
+| `avg-reduce` on `n`          | 46.38 ms             |
+| `avg-loop-rec` on `n`        | 22.37 ms             |
+| `avg-areduce` on `nd`        | 733.58 µs            |
+| `avg-loop-rec-array` on `nd` | 728.14 µs            |
+
+### Standard Deviation Calculations
+| Function                       | Execution Time       |
+|--------------------------------|----------------------|
+| `std-dev-reduce` on `n`        | 89.61 ms             |
+| `std-dev-loop-rec` on `n`      | 66.46 ms             |
+| `std-dev-areduce` on `nd`      | 1.48 ms              |
+| `std-dev-loop-rec-array` on `nd` | 1.49 ms           |
+
+### Dot Product Calculations
+| Function                           | Execution Time       |
+|------------------------------------|----------------------|
+| `dot-product-loop-rec` on `nd`     | 30.56 ms             |
+| `dot-product-loop-rec-array` on `nd` | 751.90 µs        |
+
+
 
 ## License
 
