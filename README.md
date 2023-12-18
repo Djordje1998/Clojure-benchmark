@@ -6,8 +6,10 @@ A Clojure library designed to ... well, that part is up to you.
 
 ## Benchmark Results
 
+```clojure
 (def n (doall (range 1 1e6)))
 (def nd (double-array n))
+```
 
 ### Count Calculations
 | Function       | Execution Time | Improvement (%) | Speed Factor   |
